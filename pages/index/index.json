@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "fake-modal": "../components/fake-modal/fake-modal"
+  }
+}
