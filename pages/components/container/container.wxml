@@ -1,0 +1,5 @@
+<!--pages/components/container/container.wxml-->
+
+<view class="wrap">
+  <image src="{{avatarUrl}}" class="avatar"></image>
+</view>

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "fake-modal": "../components/fake-modal/fake-modal"
+    "fake-modal": "../components/fake-modal/fake-modal",
+    "container": "../components/container/container"
   }
 }

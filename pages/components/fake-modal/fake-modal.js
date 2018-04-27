@@ -21,24 +21,24 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    closeInMask(e) {
-      console.log(e)
-      if (e.currentTarget.id == e.target.id) {
-        this.closeModal()
-      }
-    },
+    // closeInMask(e) {
+    //   console.log(e)
+    //   if (e.currentTarget.id == e.target.id) {
+    //     this.closeModal()
+    //   }
+    // },
 
-    closeModal() {
-      console.log('hide')
-      this.setData({
-        isShow: false
-      })
-    }, 
+    // closeModal() {
+    //   console.log('hide')
+    //   this.setData({
+    //     isShow: false
+    //   })
+    // }, 
 
-    showModal() {
-      this.setData({
-        isShow: true
-      })
-    }
+    // showModal() {
+    //   this.setData({
+    //     isShow: true
+    //   })
+    // }
   }
 })

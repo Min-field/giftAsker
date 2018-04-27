@@ -1,3 +1,61 @@
-<view>
-  <fake-modal isShow="true"></fake-modal>
+<swiper bindchange="swiperChange" previous-margin="100rpx" next-margin="100rpx" class="swiper" >
+  <block wx:for="{{templates}}">
+    <swiper-item>
+      <view class="template-wrap">
+        <view class="template">{{index}}</view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="dots-wrap">
+  <block wx:for="{{templates}}">
+    <view class="{{ index == current ? 'picked-dot': 'dot'}}"></view>
+  </block>
 </view>
+
+<view class="modal-btns">
+  <view bindtap="showSelectModal">换个礼物</view>
+  <view bindtap="showInputModal">设置打赏条件</view>
+</view>
+
+<view class="btns">
+  <button class="btn" open-type="share">发送给朋友</button>
+  <view class="btn">生成海报分享</view>
+</view>
+
+<fake-modal isShow="{{inputModal}}">
+  <view class="slot">
+    <view class="modal-tip">收到的打赏不可退回, 超出的金额将充入零钱</view>
+    <view class="conditions-wrap">
+      <block wx:for="{{conditions}}">
+        <view class="condition">
+          打赏
+          <input class="give" value="{{item.give}}" bindinput="getGive" data-index="{{index}}"></input>
+          元，
+          回报
+          <input class="back" value="{{item.back}}" bindinput="getBack" data-index="{{index}}"></input>
+        </view>
+      </block>
+    </view>
+    <view class="close-modal" bindtap="closeModal">取消</view>
+  </view>
+</fake-modal>
+
+<fake-modal isShow="{{selectModal}}">
+  <view class="slot">
+    <view class="modal-tip">选择一个你喜欢的礼物</view>
+    <scroll-view scroll-x="true">
+      <view class="gifts">
+        <block wx:for="{{gifts}}" wx:for-item="gift">
+          <view class="gift">
+            <view>{{gift.image}}</view>
+            <view>{{gift.name}}</view>
+            <view>{{gift.price}}</view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+    <view class="close-modal" bindtap="closeModal">取消</view>
+  </view>
+</fake-modal>

@@ -1,0 +1,14 @@
+/* pages/components/container/container.wxss */
+
+.wrap {
+  background: white;
+  width: 600rpx;
+  height: 400rpx;
+  margin-top: 200rpx;
+
+  position: relative;
+}
+
+.avatar {
+  position: absolute;
+}
