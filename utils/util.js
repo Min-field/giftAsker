@@ -17,7 +17,7 @@ const formatNumber = n => {
 /** 
  * 获取用户授权, 回调相应函数
  */
-const auth =  (authName, ab) => {
+const auth =  (authName, cb) => {
   wx.getSetting({
     success: (res) => {
       if (!res[authName]) {

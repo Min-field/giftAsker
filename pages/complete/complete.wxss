@@ -1,0 +1,55 @@
+page {
+  background: #C05044;
+}
+
+.thanks {
+  color: #FDF2DC;
+  font-size: 48rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+
+.container {
+  width: 700rpx;
+  margin: 100rpx 25rpx 0;
+  background: #fff;
+
+  border-radius: 10rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.avatar {
+  position: absolute;
+
+  border: 4rpx solid #FAE2B4;
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  top: -50rpx;
+}
+
+.want {
+  margin-top: 80rpx;
+  font-size: 36rpx;
+}
+
+.gift {
+  margin-top: 40rpx;
+}
+
+.gift-image {
+  height: 400rpx;
+  width: 300rpx;
+}
+
+.I-want {
+  margin: 60rpx 0 100rpx;
+}
+
+
+
+

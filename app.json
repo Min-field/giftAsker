@@ -1,7 +1,12 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/give/give"
+    "pages/give/give",
+    "pages/giveBySelf/giveBySelf",
+    "pages/complete/complete",
+    "pages/getGift/getGift",
+    "pages/order/order",
+    "pages/test/test"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,64 @@
+<view class="gift">
+  <image src="../images/placeholder.png"></image>
+  <view>收到三只松鼠礼包</view>
+</view>
+
+<view class="wrap">
+  <view class="section">
+    <view class="item">
+      <view class="label">收货人:</view>
+      <view class="value">{{name}}</view>
+    </view>
+
+    <view class="item">
+      <view class="label">收货地址:</view>
+      <view class="value">{{address}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="wrap">
+  <view class="section">
+    <view class="item">
+      <view class="label">礼品订单:</view>
+      <view class="value">{{order}}</view>
+    </view>
+
+    <view class="item">
+      <view class="label">订单状态:</view>
+      <view class="value">{{status}}</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="item">
+      <view class="label">物流配送:</view>
+      <view class="value">{{express}}</view>
+    </view>
+
+    <view class="item">
+      <view class="label">运单编号:</view>
+      <view class="value">{{expressNum}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="wrap">
+  <view class="section">
+    <view class="item">
+      <view class="label">心愿状态:</view>
+      <view class="value">{{desireStatus}}</view>
+    </view>
+
+    <view class="item">
+      <view class="label">参与时间:</view>
+      <view class="value">{{desireStart}}</view>
+    </view>
+
+    <view class="item">
+      <view class="label">达成时间:</view>
+      <view class="value">{{desireEnd}}</view>
+    </view>
+  </view>
+</view>
+

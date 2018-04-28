@@ -1,0 +1,4 @@
+<!--pages/test/test.wxml-->
+<block wx:for="{{urls}}">
+  <button bindtap="toUrl" data-url="{{item.url}}">{{item.text}}</button>
+</block>

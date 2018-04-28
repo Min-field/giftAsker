@@ -1,0 +1,46 @@
+
+<view class="thanks">你的心愿达成啦，快填地址领取吧</view>
+<view class="container" style="height: {{windowHeight - 75}}px">
+  <image src="../images/test.png" class="avatar"></image>
+  <view class="want">{{name}}已收到这份礼物</view>
+  <view class="gift">
+    <image class="gift-image" src="../images/placeholder.png"></image>
+  </view>
+
+ 
+  <fake-button wx:if="{{!addressChoosed}}" class="I-want" text="填地址领礼物" catchtap="getAddress"></fake-button>
+
+  <view class="viewOrder" wx:if="{{addressChoosed}}" catchtap="viewOrder">
+    <fake-button text="我要送礼物"></fake-button>
+    <view class="view-order" catchtap="toOrder">
+      <text>查看订单</text>
+      <fake-triangle class="triangle"></fake-triangle>
+    </view>
+  </view>
+
+  <view class="give-wrap">
+    
+    <view class="give-info">
+      共
+        <text class="give-info-text">{{details.length}}</text>
+      人参与打赏, 收到
+        <text class="give-info-text">{{total}}</text>
+      元, 多余
+        <text class="give-info-text">{{remain}}</text>
+      元已转入钱包
+    </view>
+
+    <view class="detail-wrap">
+      <block wx:for="{{details}}">
+        <view class="detail">
+          <image src="../images/test.png"></image>
+          <view class="name-wrap">
+            <view>{{item.name}}</view>
+            <view>打赏<text style="display:inline-block; min-width: 80rpx; text-align: center;">{{item.give}}</text>元</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+</view>

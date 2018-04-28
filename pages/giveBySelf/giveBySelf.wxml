@@ -1,5 +1,5 @@
 
-<view class="container" style="height: {{windowHeight - 75}}px">
+<view class="container">
   <image src="../images/test.png" class="avatar"></image>
   <view class="want">{{name}}想要这份礼物</view>
   <view class="gift">
@@ -22,11 +22,21 @@
     <view class="get-text">¥{{getByNow}}</view>
   </view>
 
-  <fake-button catchtap="showGiveModal" class="give-button" text="打赏支持"></fake-button>
-
-  <view class="I-want" catchtap="toIndex">
-    <text>我也要求礼物</text>
-    <fake-triangle class="triangle"></fake-triangle>
+  <fake-button catchtap="showGiveModal" class="give-button" text="犒赏自己"></fake-button>
+  
+  <view class="give-wrap">
+    <view class="give-info">共<text style="color: #BE4F44; padding: 0 5rpx;">{{details.length}}</text>人参与打赏</view>
+    <view class="detail-wrap">
+      <block wx:for="{{details}}">
+        <view class="detail">
+          <image src="../images/test.png"></image>
+          <view class="name-wrap">
+            <view>{{item.name}}</view>
+            <view>打赏<text style="display:inline-block; min-width: 80rpx; text-align: center;">{{item.give}}</text>元</view>
+          </view>
+        </view>
+      </block>
+    </view>
   </view>
 </view>
 

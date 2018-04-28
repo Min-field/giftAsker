@@ -1,0 +1,49 @@
+page {
+  background: #F2F2F2;
+  font-size: 28rpx;
+}
+
+.gift, .wrap {
+  background: #fff;
+}
+
+.gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30rpx;
+  padding: 30rpx;
+}
+
+.gift image {
+  width: 300rpx;
+  height: 200rpx;
+  margin-bottom: 30rpx;
+}
+
+.wrap {
+  margin-top: 30rpx;
+}
+
+.section {
+  padding: 20rpx;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.label {
+  width: 25%;
+  color: #7C8287;
+}
+
+.value {
+  width: 75%;
+  color: #323232;
+}
+

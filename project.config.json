@@ -30,13 +30,42 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
 					"name": "从分享进入打赏",
 					"pathName": "pages/give/give",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "自我打赏",
+					"pathName": "pages/giveBySelf/giveBySelf",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "完成页",
+					"pathName": "pages/complete/complete",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "获取礼物",
+					"pathName": "pages/getGift/getGift",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "从订单进入",
+					"pathName": "pages/order/order",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "测试页",
+					"pathName": "pages/test/test"
 				}
 			]
 		}

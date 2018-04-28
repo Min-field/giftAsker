@@ -1,0 +1,117 @@
+page {
+  background: #C05044;
+}
+
+.thanks {
+  color: #FDF2DC;
+  font-size: 36rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+
+.container {
+  width: 700rpx;
+  margin: 100rpx 25rpx 0;
+  background: #fff;
+
+  border-radius: 10rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.avatar {
+  position: absolute;
+
+  border: 4rpx solid #FAE2B4;
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  top: -50rpx;
+}
+
+.want {
+  margin-top: 80rpx;
+  font-size: 36rpx;
+}
+
+.gift {
+  margin-top: 40rpx;
+}
+
+.gift-image {
+  height: 400rpx;
+  width: 300rpx;
+}
+
+.I-want {
+  margin: 60rpx 0 100rpx;
+}
+
+.give-wrap {
+  width: 100%;
+  background: #F8F8F8;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.give-info {
+  width: 650rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  padding: 20rpx;
+  /* border-bottom: 1rpx solid #ccc; */
+}
+
+.detail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 660rpx;
+  height: 100rpx;
+}
+
+.detail image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin: 0 20rpx;
+}
+
+.detail .name-wrap {
+  width: 520rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  line-height: 100rpx;
+  /* border-bottom: 1rpx solid #ccc; */
+}
+
+.give-info-text {
+  color: #BE4F44; 
+  padding: 0 5rpx;
+}
+
+.viewOrder {
+  margin: 30rpx 0;
+}
+
+.view-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+}
+
+.triangle  {
+  margin-left: 10rpx;
+}
+
+
+

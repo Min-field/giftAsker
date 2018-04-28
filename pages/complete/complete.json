@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "fake-button": "../components/fake-button/fake-button"
+  }
+}
