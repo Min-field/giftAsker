@@ -33,7 +33,19 @@ const auth =  (authName, ab) => {
   })
 }
 
+/**
+ *  获取设备信息
+ */
+const getWindowSize = ctx => {
+  let APP = getApp()
+  ctx.setData({
+    windowWidth: APP.globalData.systemInfo.windowWidth,
+    windowHeight: APP.globalData.systemInfo.windowHeight,
+  })
+}
+
 module.exports = {
   formatTime: formatTime,
   auth, 
+  getWindowSize
 }

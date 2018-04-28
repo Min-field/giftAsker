@@ -1,0 +1,3 @@
+<!--pages/components/fake-triangle/fake-triangle.wxml-->
+
+<view class="triangle"></view>

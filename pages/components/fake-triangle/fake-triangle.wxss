@@ -1,0 +1,9 @@
+/* pages/components/fake-triangle/fake-triangle.wxss */
+.triangle {
+  width: 0;
+  height: 0;
+  border: 20rpx solid transparent;
+  border-left-color: #222;
+  border-top-width: 10rpx;
+  border-bottom-width: 10rpx;
+}

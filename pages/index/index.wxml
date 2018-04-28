@@ -1,8 +1,8 @@
-<swiper bindchange="swiperChange" previous-margin="100rpx" next-margin="100rpx" class="swiper" >
+<swiper class="swiper" bindchange="swiperChange" previous-margin="100rpx" next-margin="100rpx" class="swiper" >
   <block wx:for="{{templates}}">
     <swiper-item>
       <view class="template-wrap">
-        <view class="template">{{index}}</view>
+        <view class="template">模板{{index}}</view>
       </view>
     </swiper-item>
   </block>
@@ -20,8 +20,8 @@
 </view>
 
 <view class="btns">
-  <button class="btn" open-type="share">发送给朋友</button>
-  <view class="btn">生成海报分享</view>
+  <button class="btn" open-type="share" plain>发送给朋友</button>
+  <button class="btn" plain>生成海报分享</button>
 </view>
 
 <fake-modal isShow="{{inputModal}}">
@@ -49,9 +49,9 @@
       <view class="gifts">
         <block wx:for="{{gifts}}" wx:for-item="gift">
           <view class="gift">
-            <view>{{gift.image}}</view>
-            <view>{{gift.name}}</view>
-            <view>{{gift.price}}</view>
+            <image src="../images/placeholder.png"></image>
+            <view class="name">{{gift.name}}</view>
+            <view class="price">¥{{gift.price}}</view>
           </view>
         </block>
       </view>

@@ -1,0 +1,10 @@
+/* pages/components/fake-button/fake-button.wxss */
+.btn {
+  background: #BE4F44;
+  color: #fff;
+  width: 440rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}

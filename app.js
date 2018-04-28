@@ -12,6 +12,13 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
+
+    // 获取设备信息
+    wx.getSystemInfo({
+      success: res => {
+        this.globalData.systemInfo = res
+      },
+    })
     
     // 获取用户信息
     wx.getSetting({
@@ -40,6 +47,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    systemInfo: null
   }
 })

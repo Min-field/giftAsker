@@ -1,0 +1,146 @@
+/* pages/give/give.wxss */
+page {
+  background: #C05044;
+}
+
+.container {
+  width: 700rpx;
+  margin: 150rpx 25rpx 0;
+  background: #fff;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.avatar {
+  position: absolute;
+
+  border: 4rpx solid #FAE2B4;
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  top: -50rpx;
+}
+
+.want {
+  margin-top: 80rpx;
+  font-size: 36rpx;
+}
+
+.gift {
+  margin-top: 40rpx;
+}
+
+.gift-image {
+  height: 400rpx;
+  width: 300rpx;
+}
+
+.progress-wrap {
+  margin: 30rpx 50rpx 0;
+  width: 600rpx;
+  font-size: 28rpx;
+}
+
+.range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-text {
+  color: #9B9B9B;
+}
+
+.get-text {
+  color: #C02828;
+}
+
+progress {
+  margin: 10rpx 0;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.give-button {
+  margin-top: 30rpx;
+}
+
+.I-want {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+}
+
+.triangle  {
+  margin-left: 10rpx;
+}
+
+.condition {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  border: 1rpx solid #DBB758;
+  border-radius: 10rpx;
+  margin: 30rpx;
+  padding: 30rpx 20rpx;
+
+  font-size: 32rpx;
+}
+
+.picked {
+  border: 1rpx solid #E67A6E;
+}
+
+.condition text {
+  color: #676767;
+  padding: 0 20rpx;
+}
+
+.modal-tip {
+  font-size: 28rpx;
+  padding: 20rpx;
+}
+
+.btn-wrap {
+  height: 130rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.give-price {
+  width: 200rpx;
+  height: 130rpx;
+  text-align: center;
+  line-height: 65rpx;
+}
+
+.give-price .give-text {
+  color: #676767;
+}
+
+.give-price .price {
+  color: #DF5142;
+}
+
+.cancel {
+  width: 200rpx;
+  line-height: 130rpx;
+  text-align: center;
+  color: #fff;
+  background: #ccc;
+}
+
+.confirm {
+  width: 350rpx;
+  line-height: 130rpx;
+  text-align: center;
+  color: #fff;
+  background: #DF5142;
+}

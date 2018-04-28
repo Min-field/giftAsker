@@ -1,0 +1,55 @@
+<!--pages/give/give.wxml-->
+
+<view class="container" style="height: {{windowHeight - 75}}px">
+  <image src="../images/test.png" class="avatar"></image>
+  <view class="want">{{name}}想要这份礼物</view>
+  <view class="gift">
+    <image class="gift-image" src="../images/placeholder.png"></image>
+  </view>
+
+  <view class="progress-wrap">
+    <view class="range">
+      <text class="range-text">¥0</text>
+      <text class="range-text">¥{{price}}</text>
+    </view>
+
+    <progress
+      stroke-width="9"
+      activeColor="#DBB757"
+      backgroundColor="#E1E1E1"
+      percent="82.5"
+      active
+      ></progress>
+    <view class="get-text">¥{{getByNow}}</view>
+  </view>
+
+  <fake-button catchtap="showGiveModal" class="give-button" text="打赏支持"></fake-button>
+
+  <view class="I-want" catchtap="toIndex">
+    <text>我也要求礼物</text>
+    <fake-triangle class="triangle"></fake-triangle>
+  </view>
+</view>
+
+<fake-modal isShow="{{showGive}}">
+  <view class="wrap">
+    <view class="modal-tip">打赏须知: 打赏金额无法退回</view>
+    <view class="conditions">
+      <block wx:for="{{conditions}}">
+        <view class="{{chooseIndex == index ? 'condition picked' : 'condition'}}" catchtap="chooseCondition" data-index="{{index}}"> 
+          打赏<text>{{item.give}}</text>元, 回报<text>{{item.back}}</text>
+        </view>
+      </block>
+      <view class="{{chooseIndex == 'total' ? 'condition picked' : 'condition'}}" catchtap="chooseCondition" data-index="total">整个送出</view>
+    </view>
+  </view>
+  <view class="btn-wrap">
+    <view class="give-price">
+      <view class="give-text">打赏</view>
+      <view class="price">¥{{giveMoney}}</view>
+    </view>
+
+    <view class="cancel" catchtap="closeGiveModal">取消</view>
+    <view class="confirm" catchtap="confirm">确认支付</view>
+  </view>
+</fake-modal>

@@ -16,16 +16,16 @@ Page({
     ], 
 
     gifts: [
-      {name: 'hello', price: '11', image: 'text'},
-      { name: 'hello', price: '11', image: 'text' },
-      { name: 'hello', price: '11', image: 'text' },
-      { name: 'hello', price: '11', image: 'text' },
-      { name: 'hello', price: '11', image: 'text' },
-      { name: 'hello', price: '11', image: 'text' },
-      { name: 'hello', price: '11', image: 'text' },
-      { name: 'hello', price: '11', image: 'text' },
-      { name: 'hello', price: '11', image: 'text' },
-      { name: 'hello', price: '11', image: 'text' },
+      { name: 'name', price: '11', image: 'text' },
+      { name: 'name', price: '11', image: 'text' },
+      { name: 'name', price: '11', image: 'text' },
+      { name: 'name', price: '11', image: 'text' },
+      { name: 'name', price: '11', image: 'text' },
+      { name: 'name', price: '11', image: 'text' },
+      { name: 'name', price: '11', image: 'text' },
+      { name: 'name', price: '11', image: 'text' },
+      { name: 'name', price: '11', image: 'text' },
+      { name: 'name', price: '11', image: 'text' },
     ]
   },
 

@@ -1,4 +1,4 @@
-<view id="mask" class="modal-mask" bindtap="closeInMask" wx:if="{{isShow}}">
+<view id="mask" class="modal-mask"  wx:if="{{isShow}}">
   <view class="wrap">
     <slot></slot>
   </view>
