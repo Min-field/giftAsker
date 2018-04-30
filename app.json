@@ -1,11 +1,13 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/gift/gift",
     "pages/give/give",
     "pages/giveBySelf/giveBySelf",
     "pages/complete/complete",
     "pages/getGift/getGift",
     "pages/order/order",
+    "page/route/route",
     "pages/test/test"
   ],
   "window":{

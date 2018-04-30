@@ -31,10 +31,10 @@
       <block wx:for="{{conditions}}">
         <view class="condition">
           打赏
-          <input class="give" value="{{item.give}}" bindinput="getGive" data-index="{{index}}"></input>
+          <input class="give" value="{{item.give}}" bindblur="getInput" data-type="give" data-index="{{index}}"></input>
           元，
           回报
-          <input class="back" value="{{item.back}}" bindinput="getBack" data-index="{{index}}"></input>
+          <input class="back" value="{{item.back}}" bindblur="getInput" data-type="back" data-index="{{index}}"></input>
         </view>
       </block>
     </view>
@@ -48,8 +48,8 @@
     <scroll-view scroll-x="true">
       <view class="gifts">
         <block wx:for="{{gifts}}" wx:for-item="gift">
-          <view class="gift">
-            <image src="../images/placeholder.png"></image>
+          <view class="gift" catchtap="chooseGift" data-id="{{gift.id}}">
+            <image src="{{gift.imageUrl}}"></image>
             <view class="name">{{gift.name}}</view>
             <view class="price">¥{{gift.price}}</view>
           </view>

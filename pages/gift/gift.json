@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "fake-button": "../components/fake-button/fake-button",
+    "fake-triangle": "../components/fake-triangle/fake-triangle",
+    "fake-modal": "../components/fake-modal/fake-modal"
+  }
+}
